@@ -1,0 +1,200 @@
+@media only screen and (min-width: 1309px) {
+    
+   
+
+    
+    body {
+        margin: 0;
+        overflow: hidden;
+        filter: contrast(1.7);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    #container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    
+    .image1 {
+        position: absolute;
+        top: 20px;
+        left: 10%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+    }
+    
+    .image1 img {
+        width: auto;
+        max-height: 70px;
+        pointer-events: none;
+    }
+    .image2{
+        position: absolute;
+        top: 1.7%;
+        left: 20%;
+     
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+    
+    }
+    .image2 img {
+    
+        width: 10%;
+    
+        max-height:auto;
+        pointer-events: none;
+    }
+    
+    .image3{
+        position: absolute;
+        bottom: 1.7%;
+        right: -40%;
+     
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+        
+    
+    }
+    .image3 img {
+    
+        width: 15%;
+    
+        max-height:auto;
+        pointer-events: none;
+        animation: floatEffect 6s infinite ease-in-out; /* Animation for floating */
+    }
+    .image4 {
+        position: absolute;
+        bottom: -1%;
+        left: -3%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+        transform: scaleX(-1);
+    
+        animation: floatEffect 6s infinite ease-in-out; /* Animation for floating */
+    }
+    
+    .image4 img {
+        width: 70%;
+        max-height: auto;
+        pointer-events: none;
+        transform: scaleX(-1);
+    }
+    
+    /* Define the floating effect */
+    @keyframes floatEffect {
+        0% {
+            transform: translateY(0); /* Starting position */
+        }
+        50% {
+            transform: translateY(-15px); /* Float up */
+        }
+        100% {
+            transform: translateY(0); /* Return to original position */
+        }
+    }
+    
+    .image5{
+        position: absolute;
+        bottom: 12%;
+        left: -2%;
+        transform: translateX(4%);
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+        animation: fadeInOut 20s ease-in-out forwards; /* 12 seconds for smooth fade */
+    
+    }
+    .image5 img {
+    
+        width: 36%;
+        max-height:auto;
+        pointer-events: none;
+    }
+    
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0; /* Fully transparent */
+            transform: translateX(-15%) translateY(20px); /* Slightly shifted down */
+        }
+        20% {
+            opacity: 1; /* Fully visible */
+            transform: translateX(-14%) translateY(0); /* Back to original position */
+        }
+        80% {
+            opacity: 1; /* Fully visible */
+        }
+        100% {
+            opacity: 0; /* Fully transparent */
+            transform: translateX(-14%) translateY(-20px); /* Slightly shifted up */
+        }
+    }
+    
+    
+    .image6 {
+        position: absolute;
+        bottom: 13%;
+        left: 56%;
+        
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+        opacity: 0; /* Initially invisible */
+       
+        animation: fadeInOut1 20s ease-in-out forwards; /* 20 seconds total duration */
+        animation-play-state: paused; /* Start paused */
+    }
+    
+    .image6 img {
+        width: 75%;
+        max-height: auto;
+        pointer-events: none;
+    }
+    
+    @keyframes fadeInOut1{
+        0% {
+            opacity: 0;
+            transform: translateX(-15%) translateY(20px);
+        }
+        50% {
+            opacity: 1;
+            transform: translateX(-14%) translateY(0);
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-14%) translateY(-20px);
+        }
+    }
+    
+    
+    
+    
+    .youtube-audio iframe {
+        display: none; /* Hides the iframe */
+    }
+    }
